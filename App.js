@@ -29,4 +29,30 @@ function myButton () {
   }
 }
 
+
+//Props-Try using Render
+
+function Hello(props) {
+  return <h1>Hello Barath!</h1>;
+}
+
+ReactDOM.render(<Hello/>, document.getElementById("root"));
+
+function Car(props) {
+  return <h2>I am a { props.brand }!</h2>;
+}
+
+function Office() {
+  const empName = "Barath";
+  return (
+    <>
+	    <h1>What is the Employee name?</h1>
+	    <Emp Name={ empName } />
+    </>
+  );
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<office />);
+
 export default App;
