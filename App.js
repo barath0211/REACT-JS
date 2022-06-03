@@ -55,4 +55,22 @@ function Office() {
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<office />);
 
+	    //Class Components 
+class Mypage extends React.component
+{
+  render ()
+  {
+    return <h1>HELLO SIR</h1>
+  }
+}
+class Mypage  extends React.Component {
+  render () {
+    <div>
+      <p>This is Barath of ZNZ</p>
+      <h1>I welcome you !!</h1>
+    </div>
+  }
+}
+
+export default Mypage;
 export default App;
