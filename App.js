@@ -72,5 +72,32 @@ class Mypage  extends React.Component {
   }
 }
 
+//state-functional components
+
+const MyFunctionalComponent = () => {
+  const [display.setDisplay] = useState(false);
+  const [text,setText]=useState('any random text');
+  const [employee,setEmployee] = useState([]);
+  Firstname = 'Barath'
+  Lastname = 'Kumaar'
+  };
+  const [age,setAge]=useState(24);
+  Return (
+  <>
+  <p>My first app</p>
+  </>)
+  const handleClick = () => {
+  setDisplay(true);
+  setTodos([{id:'1234',text:'any text'}]);
+  setEmployee({firstname: 'Elon',lastname:'musk'})
+  setText('modified text')
+  console.log(display,text,todos,employee)
+  return(
+  {display === true? <p>My first functional component </p> :''}
+  <button onClick={handleClick}>Display functional content</button>
+  </>
+  )}
+  
+
 export default Mypage;
 export default App;
